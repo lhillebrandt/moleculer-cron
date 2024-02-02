@@ -90,7 +90,7 @@ module.exports = {
 							}
 						), // context
 						job.runOnInit || false, // runOnInit
-						job.utcOffset || null, // utcOffset
+						job.utcOffset || undefined, // utcOffset
 						job.unrefTimeout || null, // unrefTimeout
 					)
 					cronjob.manualStart = job.manualStart || false
