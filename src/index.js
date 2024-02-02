@@ -89,7 +89,7 @@ module.exports = {
 								getJob: this.getJob,
 							}
 						), // context
-						job.runOnInit || (_ => {}), // runOnInit
+						job.runOnInit || false, // runOnInit
 						job.utcOffset || null, // utcOffset
 						job.unrefTimeout || null, // unrefTimeout
 					)
